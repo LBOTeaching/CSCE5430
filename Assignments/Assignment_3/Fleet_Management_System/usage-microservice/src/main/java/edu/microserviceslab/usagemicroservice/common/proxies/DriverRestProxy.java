@@ -17,6 +17,6 @@ public class DriverRestProxy {
     }
 
     public String getVehicleForDriver(Long driverId) {
-        return restTemplate.getForObject(usageConfigProperties.getVehicleBaseUrl() + "driver/{driverId}/vehicleId", String.class, driverId);
+        return restTemplate.getForObject(usageConfigProperties.getDriverBaseUrl() + "driver/{driverId}/vehicleId", String.class, driverId);
     }
 }
